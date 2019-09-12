@@ -12,7 +12,7 @@ namespace luce_MIS4200_940.Models
         public string firstName { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
-        public ICollection<order> orders { get; set; }
+        public ICollection<customerOrder> orders { get; set; }
 
     }
 }

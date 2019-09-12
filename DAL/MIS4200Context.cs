@@ -13,5 +13,10 @@ namespace luce_MIS4200_940.DAL
         {
 
         }
+        public DbSet<customer> Customer {get; set; }
+        public DbSet<customerOrder> CustomerOrder { get; set; }
+        public DbSet<lineItem> LineItem { get; set; }
+        public DbSet<product> Product  { get; set; }
+
     }
 }
