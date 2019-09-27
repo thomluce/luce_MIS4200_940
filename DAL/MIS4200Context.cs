@@ -11,7 +11,7 @@ namespace luce_MIS4200_940.DAL
     {
         public MIS4200Context() : base("name=DefaultConnection")
         {
-
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context, luce_MIS4200_940.Migrations.MISContext.Configuration>("DefaultConnection"));
         }
         public DbSet<customer> Customer {get; set; }
         public DbSet<customerOrder> CustomerOrder { get; set; }
